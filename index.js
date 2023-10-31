@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const taskList = [];
 
 app.get("/", (req, res) => {
-  res.render("index.ejs", { taskList}); 
+  res.render("index.ejs", { taskList });
 });
 
 app.post("/add", (req, res) => {
